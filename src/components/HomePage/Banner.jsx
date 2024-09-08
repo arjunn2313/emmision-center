@@ -24,13 +24,13 @@ const Banner = () => {
         <div className="space-x-4">
           <Link
             to="/booking"
-            className="px-4 py-2 md:px-6 md:py-3 border text-white  shadow-lg transform hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
+            className="uppercase px-4 py-3 md:px-6 md:py-3 border text-white  shadow-lg transform hover:bg-white hover:text-black transition-all duration-300 ease-in-out"
           >
             Book a Test
           </Link>
           <Link
             to="/services"
-            className="px-4 py-2 md:px-6 md:py-3 border-2   bg-white text-black   hover:bg-transparent hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="uppercase  px-4 py-3 md:px-6 md:py-3 bg-white text-black  hover:border hover:bg-transparent hover:text-white transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             Learn More
           </Link>

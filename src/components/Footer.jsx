@@ -1,0 +1,50 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-800 text-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          {/* Logo and Description */}
+          <div className="text-center md:text-left mb-6 md:mb-0">
+            <h1 className="text-2xl font-bold mb-2">
+              <Link to="/">Emission Test Center</Link>
+            </h1>
+            <p className="text-gray-400">
+              Committed to ensuring the safety and environmental health of our community through advanced emission testing.
+            </p>
+          </div>
+
+          {/* Links */}
+          <div className="flex flex-col md:flex-row gap-8 mb-6 md:mb-0">
+            <div>
+              <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+              <ul className="space-y-2">
+                <li><Link to="/" className="hover:text-teal-400 transition-colors duration-300">Home</Link></li>
+                <li><Link to="/about" className="hover:text-teal-400 transition-colors duration-300">About Us</Link></li>
+                <li><Link to="/services" className="hover:text-teal-400 transition-colors duration-300">Services</Link></li>
+                <li><Link to="/booking" className="hover:text-teal-400 transition-colors duration-300">Book a Test</Link></li>
+                <li><Link to="/contact" className="hover:text-teal-400 transition-colors duration-300">Contact</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
+              <ul className="space-y-2">
+                <li>1234 Elm Street</li>
+                <li>City, State, 12345</li>
+                <li>Email: <a href="mailto:info@example.com" className="hover:text-teal-400 transition-colors duration-300">info@example.com</a></li>
+                <li>Phone: <a href="tel:+1234567890" className="hover:text-teal-400 transition-colors duration-300">+1 (234) 567-890</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="text-center text-gray-400 mt-6">
+          <p>&copy; 2024 Emission Test Center. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

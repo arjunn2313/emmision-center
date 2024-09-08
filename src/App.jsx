@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Contact from './Pages/Contact';
 import Homepage from './Pages/HomePage';
+import Footer from './components/Footer';
  
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/booking" element={<BookingPage />} /> */}
           <Route path="/contact" element={<Contact />} />  
       </Routes>
+      <Footer/>
     </div>
   );
 };
