@@ -21,7 +21,7 @@ const Introduction = () => {
         {/* Text Content */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-12">
           {/* Title with Animation */}
-          <h2 className="text-2xl sm:text-5xl font-extrabold text-gray-900 transition-transform transform duration-700 ease-in-out translate-y-4 animate-fade-in-up">
+          <h2 className="text-2xl sm:text-5xl font-extrabold text-teal-900 transition-transform transform duration-700 ease-in-out translate-y-4 animate-fade-in-up">
             Who We Are
           </h2>
           {/* Description with Animation */}

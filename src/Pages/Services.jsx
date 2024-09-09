@@ -7,7 +7,7 @@ const Services = () => {
       
       {/* Section 1: Service Descriptions */}
       <section className="mb-12">
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Emission Testing Services</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold text-teal-900 mb-6 text-center">Our Emission Testing Services</h2>
         
         {/* Gasoline Emission Test */}
         <div className="bg-white shadow-lg rounded-xl p-6 mb-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
@@ -15,7 +15,7 @@ const Services = () => {
             <FaCar className="text-4xl text-teal-600 mr-4" />
             <h3 className="text-2xl font-bold text-gray-900">Gasoline Emission Test</h3>
           </div>
-          <p className="text-lg text-gray-700">
+          <p className="text-md sm:text-lg text-gray-700">
             Our gasoline emission test ensures that your vehicle complies with environmental regulations by measuring the amount of pollutants emitted. This test is mandatory for most vehicles and helps in maintaining cleaner air and minimizing harmful emissions.
           </p>
         </div>
@@ -26,7 +26,7 @@ const Services = () => {
             <FaTruck className="text-4xl text-teal-600 mr-4" />
             <h3 className="text-2xl font-bold text-gray-900">Diesel Emission Test</h3>
           </div>
-          <p className="text-lg text-gray-700">
+          <p className="text-md sm:text-lg text-gray-700">
             Diesel vehicles are subject to stringent emission standards. Our diesel emission test measures pollutants such as nitrogen oxides (NOx) and particulate matter, ensuring that your diesel vehicle operates within legal and environmental guidelines.
           </p>
         </div>

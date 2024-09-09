@@ -25,7 +25,7 @@ const Banner = () => {
           onClick={() => navigate("/booking")}
           className="bg-teal-600 text-white px-8 py-3 sm:px-10 sm:py-4 rounded-full font-bold hover:bg-teal-500 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInUp delay-200"
         >
-          Book Now <FaArrowRight className="inline ml-2" />
+           Book your test today <FaArrowRight className="inline ml-2" />
         </button>
       </div>
 

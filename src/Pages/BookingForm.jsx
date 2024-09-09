@@ -1,6 +1,12 @@
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
-import { FaUser, FaEnvelope, FaPhone, FaCalendarAlt, FaClock } from 'react-icons/fa';
+import {
+  FaUser,
+  FaEnvelope,
+  FaPhone,
+  FaCalendarAlt,
+  FaClock,
+} from "react-icons/fa";
 
 const BookingForm = () => {
   const {
@@ -13,7 +19,7 @@ const BookingForm = () => {
   const formRef = useRef(null);
 
   // Get today's date in yyyy-mm-dd format
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date().toISOString().split("T")[0];
 
   const onSubmit = async (data, e) => {
     e.preventDefault();
@@ -45,7 +51,12 @@ const BookingForm = () => {
     const timeRegex = /^([01]\d|2[0-3]):([0-5]\d)$/;
     if (!timeRegex.test(value)) return "Invalid time format";
     const [hours, minutes] = value.split(":").map(Number);
-    if (hours < 10 || (hours === 10 && minutes < 0) || hours > 18 || (hours === 18 && minutes > 0)) {
+    if (
+      hours < 10 ||
+      (hours === 10 && minutes < 0) ||
+      hours > 18 ||
+      (hours === 18 && minutes > 0)
+    ) {
       return "Time must be between 10:00 and 18:00";
     }
     return true;
@@ -56,8 +67,8 @@ const BookingForm = () => {
       <div className="flex flex-col lg:flex-row gap-12">
         {/* Form Section */}
         <div className="flex-1">
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">
-          Book Your Emission Test <span className="text-teal-500">Appointment</span>
+          <h2 className="text-2xl sm:text-4xl font-bold text-teal-900 mb-8 text-center">
+            Book Your Emission Test
           </h2>
 
           <form
@@ -67,8 +78,10 @@ const BookingForm = () => {
           >
             {/* Section 1: Personal Details */}
             <div className="border-b border-gray-300 pb-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Personal Details</h3>
-              
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Personal Details
+              </h3>
+
               {/* Name Input */}
               <div className="flex items-center mb-4">
                 <FaUser className="text-2xl text-teal-600 mr-3" />
@@ -81,12 +94,14 @@ const BookingForm = () => {
                     {...register("name", { required: true })}
                     className={`w-full px-4 py-2 border ${
                       errors.name ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300`}
+                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
                     placeholder="John Doe"
                     name="name"
                   />
                   {errors.name && (
-                    <span className="text-red-500 text-sm">This field is required</span>
+                    <span className="text-red-500 text-sm">
+                      This field is required
+                    </span>
                   )}
                 </div>
               </div>
@@ -102,16 +117,19 @@ const BookingForm = () => {
                     type="email"
                     {...register("email", {
                       required: true,
-                      pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+                      pattern:
+                        /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
                     })}
                     className={`w-full px-4 py-2 border ${
                       errors.email ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300`}
+                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
                     placeholder="example@email.com"
                     name="email"
                   />
                   {errors.email && (
-                    <span className="text-red-500 text-sm">Please enter a valid email address</span>
+                    <span className="text-red-500 text-sm">
+                      Please enter a valid email address
+                    </span>
                   )}
                 </div>
               </div>
@@ -125,15 +143,20 @@ const BookingForm = () => {
                   </label>
                   <input
                     type="tel"
-                    {...register("phone", { required: true, pattern: /^[0-9]{10}$/ })}
+                    {...register("phone", {
+                      required: true,
+                      pattern: /^[0-9]{10}$/,
+                    })}
                     className={`w-full px-4 py-2 border ${
                       errors.phone ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300`}
+                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
                     placeholder="1234567890"
                     name="phone"
                   />
                   {errors.phone && (
-                    <span className="text-red-500 text-sm">Please enter a valid phone number</span>
+                    <span className="text-red-500 text-sm">
+                      Please enter a valid phone number
+                    </span>
                   )}
                 </div>
               </div>
@@ -141,8 +164,10 @@ const BookingForm = () => {
 
             {/* Section 2: Test Details */}
             <div className="pt-6">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Test Details</h3>
-              
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Test Details
+              </h3>
+
               {/* Preferred Date Input */}
               <div className="flex items-center mb-4">
                 <FaCalendarAlt className="text-2xl text-teal-600 mr-3" />
@@ -156,15 +181,18 @@ const BookingForm = () => {
                     min={today} // Set minimum date to today
                     className={`w-full px-4 py-2 border ${
                       errors.date ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300`}
+                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
                     name="date"
                   />
                   {errors.date && (
-                    <span className="text-red-500 text-sm">This field is required</span>
+                    <span className="text-red-500 text-sm">
+                      This field is required
+                    </span>
                   )}
                 </div>
               </div>
 
+              {/* Preferred Time Input */}
               {/* Preferred Time Input */}
               <div className="flex items-center mb-4">
                 <FaClock className="text-2xl text-teal-600 mr-3" />
@@ -176,17 +204,26 @@ const BookingForm = () => {
                     type="text"
                     {...register("time", {
                       required: true,
-                      validate: validateTime
+                      validate: validateTime,
                     })}
                     placeholder="10:00 AM"
                     className={`w-full px-4 py-2 border ${
                       errors.time ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300`}
+                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
                     name="time"
                   />
                   {errors.time && (
-                    <span className="text-red-500 text-sm">{errors.time.message}</span>
+                    <span className="text-red-500 text-sm">
+                      {errors.time.message}
+                    </span>
                   )}
+                  {/* Informing user about time slots and Sundays */}
+                  <p className="text-gray-600 text-sm mt-2">
+                    Please book a time slot between 10:00 AM and 6:00 PM.
+                  </p>
+                  <p className="text-gray-600 text-sm">
+                    Note: Sundays are holidays, please choose another day.
+                  </p>
                 </div>
               </div>
             </div>

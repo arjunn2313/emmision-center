@@ -3,14 +3,14 @@ import { FaCar, FaCheckCircle, FaClock, FaHandsHelping, FaShieldAlt, FaStar, FaT
 
 const AboutUs = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 space-y-28">
+    <div className="max-w-7xl mx-auto px-4 py-12 sm:space-y-28">
       {/* Section 1: History & Mission */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl text-center sm:text-4xl font-bold text-teal-900 mb-4">
             Our History & Mission
           </h2>
-          <p className="text-lg text-gray-700 mb-4">
+          <p className="text:md sm:text-lg text-gray-600 mb-4">
             Established in 2020, our Emission Test Center was founded with a
             mission to ensure a cleaner and healthier environment. Our team of
             experts is dedicated to providing accurate and reliable emission
@@ -21,9 +21,10 @@ const AboutUs = () => {
             and contribute to reducing air pollution in our community.
           </p>
         </div>
-        <div className="bg-gray-100 rounded-xl p-6">
+        <div className="rounded-xl sm:p-6">
           <img
-            src="https://img.freepik.com/free-photo/smiling-mechanic-works-with-digital-tablet-repair-car_1150-18191.jpg"
+            // src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU="
+            src="https://img.freepik.com/premium-photo/thick-smoke-exhaust-gases-emitted-from-car-exhaust-pipes-problem-air-pollution-impact-cars-climate-change-environment_427877-2189.jpg"
             alt="Our History & Mission"
             className="rounded-xl"
           />
