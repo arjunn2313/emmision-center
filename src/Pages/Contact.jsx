@@ -26,7 +26,7 @@ const Contact = () => {
     <div className="flex flex-col md:flex-row items-start md:gap-12 p-4 sm:p-8 md:p-16 w-full md:w-4/5 lg:w-9/10 mx-auto">
       {/* Contact Information Section */}
       <div className="md:w-1/3 mb-8 md:mb-0">
-        <h2 className="text-3xl font-semibold mb-6 text-gray-900">
+        <h2 className="text-2xl sm:text-5xl font-semibold mb-6 text-gray-900">
           Reach Out to Us
         </h2>
         <p className="text-gray-600 mb-6">
