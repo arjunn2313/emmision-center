@@ -5,8 +5,8 @@ import introductionImage from '../../assets/vintage.png';
 
 const Introduction = () => {
   return (
-    <section className="py-32 px-8 bg-gray-50">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+    <section className="sm:py-32 px-8 bg-gray-50">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between sm:gap-12">
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <img
@@ -14,7 +14,7 @@ const Introduction = () => {
             // src="https://img.freepik.com/free-psd/vintage-car-isolated_23-2151504460.jpg?t=st=1725862519~exp=1725866119~hmac=ffabfbc91d54752cdb8f471314ccb317e55d15e35c97874f75e5c23d616b9db4&w=740"
             // src="https://img.freepik.com/free-photo/man-try-fix-car-engine-problem-local-road_1150-10665.jpg?t=st=1725855506~exp=1725859106~hmac=a18d5f8f08a44a99fa8f3fec69eb7adf5b0a64e1eedf442087eeda34c04c4df6&w=996"
             alt="Emission Testing"
-            className="w-full h-96 object-cover   transform transition duration-500 hover:scale-105"
+            className="w-full sm:h-96 object-cover   transform transition duration-500 hover:scale-105"
           />
         </div>
 

@@ -26,7 +26,7 @@ const Banner = () => {
       </div>
 
       {/* Hero Image */}
-      <div className="mt-10 md:mt-0 md:w-1/2 animate-fadeInRight">
+      <div className="sm:mt-10 md:mt-0 md:w-1/2 animate-fadeInRight">
         <img
           src={HeroImage}
           alt="Emission Testing"
