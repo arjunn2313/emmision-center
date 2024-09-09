@@ -14,7 +14,7 @@ const WhyTestingEssential = () => {
           Regular testing helps:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-          <div className="bg-white p-8 rounded-lg border border-blue-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105">
+          <div className="bg-white p-8 rounded-lg border border-teal-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105">
             <div className="text-4xl text-green-600 mb-6">
               <FaLeaf />
             </div>
@@ -26,7 +26,7 @@ const WhyTestingEssential = () => {
               reduce harmful pollutants in the atmosphere.
             </p>
           </div>
-          <div className="bg-white p-8 rounded-lg border border-blue-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105">
+          <div className="bg-white p-8 rounded-lg border border-teal-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105">
             <div className="text-4xl text-blue-600 mb-6">
               <FaCheckCircle />
             </div>
@@ -38,7 +38,7 @@ const WhyTestingEssential = () => {
               avoiding fines and penalties.
             </p>
           </div>
-          <div className="bg-white p-8 rounded-lg border border-blue-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105">
+          <div className="bg-white p-8 rounded-lg border border-teal-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105">
             <div className="text-4xl text-red-600 mb-6">
               <FaHeartbeat />
             </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaCar, FaTruck, FaFileAlt, FaProcedures } from 'react-icons/fa';
 
 const Services = () => {
   return (
@@ -9,16 +10,22 @@ const Services = () => {
         <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Emission Testing Services</h2>
         
         {/* Gasoline Emission Test */}
-        <div className="bg-white shadow-lg rounded-xl p-6 mb-6">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Gasoline Emission Test</h3>
+        <div className="bg-white shadow-lg rounded-xl p-6 mb-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+          <div className="flex items-center mb-4">
+            <FaCar className="text-4xl text-teal-600 mr-4" />
+            <h3 className="text-2xl font-bold text-gray-900">Gasoline Emission Test</h3>
+          </div>
           <p className="text-lg text-gray-700">
             Our gasoline emission test ensures that your vehicle complies with environmental regulations by measuring the amount of pollutants emitted. This test is mandatory for most vehicles and helps in maintaining cleaner air and minimizing harmful emissions.
           </p>
         </div>
 
         {/* Diesel Emission Test */}
-        <div className="bg-white shadow-lg rounded-xl p-6">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Diesel Emission Test</h3>
+        <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+          <div className="flex items-center mb-4">
+            <FaTruck className="text-4xl text-teal-600 mr-4" />
+            <h3 className="text-2xl font-bold text-gray-900">Diesel Emission Test</h3>
+          </div>
           <p className="text-lg text-gray-700">
             Diesel vehicles are subject to stringent emission standards. Our diesel emission test measures pollutants such as nitrogen oxides (NOx) and particulate matter, ensuring that your diesel vehicle operates within legal and environmental guidelines.
           </p>
@@ -29,8 +36,11 @@ const Services = () => {
       <section>
         <h2 className="text-4xl font-bold text-gray-900 mb-6">Testing Procedure</h2>
         
-        <div className="bg-blue-100 rounded-xl p-6 mb-8">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">How the Testing Works</h3>
+        <div className="bg-teal-100 rounded-xl p-6 mb-8 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+          <div className="flex items-center mb-4">
+            <FaProcedures className="text-4xl text-teal-600 mr-4" />
+            <h3 className="text-2xl font-bold text-gray-900">How the Testing Works</h3>
+          </div>
           <p className="text-lg text-gray-700 mb-4">
             The emission testing procedure involves a thorough check of your vehicle’s exhaust system to measure the levels of pollutants it releases. We use state-of-the-art equipment to ensure precise measurements and compliance with environmental standards.
           </p>
@@ -42,8 +52,11 @@ const Services = () => {
           </ul>
         </div>
 
-        <div className="bg-blue-100 rounded-xl p-6">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Required Documents</h3>
+        <div className="bg-teal-100 rounded-xl p-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+          <div className="flex items-center mb-4">
+            <FaFileAlt className="text-4xl text-teal-600 mr-4" />
+            <h3 className="text-2xl font-bold text-gray-900">Required Documents</h3>
+          </div>
           <p className="text-lg text-gray-700">
             To ensure a smooth testing process, please bring the following documents:
           </p>

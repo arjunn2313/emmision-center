@@ -1,35 +1,37 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import bannerImage from "../../assets/banner.webp";
 import { FaArrowRight } from "react-icons/fa";
 import HeroImage from "../../assets/hero.png";
 
 const Banner = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
   return (
-    <div className="h-screen  py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
+    <div className="h-screen bg-teal-50 py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between  ">
       {/* Text Content */}
       <div className="text-center md:text-left md:w-1/2 space-y-6">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4 animate-fadeInUp">
-          Welcome to Brand name
-          </h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-6 animate-fadeInUp delay-100">
+        <h1 className="text-4xl md:text-5xl font-bold text-charcoal-gray mb-4 animate-fadeInUp">
+          Welcome to  <span className="text-teal-500">Brand Name</span>
+        </h1>
+        <p className="text-lg md:text-xl text-dark-gray mb-6 animate-fadeInUp delay-100">
           Providing accurate and reliable emission tests for all types of
           vehicles.
         </p>
-       
-        <button onClick={()=>navigate("/booking")} className="bg-blue-600 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-500 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInUp delay-200">
-         Booking <FaArrowRight className="inline ml-2" />
-        </button> 
 
+        <button
+          onClick={() => navigate("/booking")}
+          className="bg-teal-600 text-white px-8 py-3 rounded-full font-bold hover:bg-teal-500 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInUp delay-200"
+        >
+          Book Now <FaArrowRight className="inline ml-2" />
+        </button>
       </div>
 
       {/* Hero Image */}
       <div className="mt-10 md:mt-0 md:w-1/2 animate-fadeInRight">
         <img
           src={HeroImage}
-          alt="Modern Furniture"
-          className="w-full h-auto object-cover  transform transition duration-500 hover:scale-105"
+          alt="Emission Testing"
+          className="w-full h-auto object-cover transform transition duration-500 hover:scale-105"
         />
       </div>
     </div>
