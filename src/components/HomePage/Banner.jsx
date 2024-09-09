@@ -10,22 +10,27 @@ const Banner = () => {
     <div className="h-screen bg-teal-50 py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
       {/* Text Content */}
       <div className="text-center md:text-left md:w-1/2 space-y-6 sm:space-y-10">
-        <h1 className="text-2xl     md:text-5xl font-bold text-charcoal-gray mb-4 animate-fadeInUp">
-          Welcome to
+        <h1 className="text-2xl md:text-5xl font-bold text-teal-900  mb-4 animate-fadeInUp">
+          Experience Excellence at
         </h1>
-        <h1 className="text-teal-800 text-4xl  t   md:text-7xl font-bold text-charcoal-gray mb-4 animate-fadeInUp">
-          Brand Name
+        <h1 className="text-teal-800 text-4xl md:text-7xl font-bold text-charcoal-gray mb-4 animate-fadeInUp"  style={{ fontFamily: "Playfair Display, serif" }}>
+          Shop Name
         </h1>
-        <p className="text-lg md:text-xl font-serif leading-relaxed text-gray-700 mb-6 animate-fadeInUp delay-100">
+        <p className="text-lg md:text-xl text-gray-700 mb-6 animate-fadeInUp delay-100">
+          Your trusted partner for top-tier emission testing solutions.
           Providing accurate and reliable emission tests for all types of
           vehicles.
         </p>
+
+        {/* <p className="text-lg md:text-xl font-serif leading-relaxed text-gray-700 mb-6 animate-fadeInUp delay-100">
+        
+        </p> */}
 
         <button
           onClick={() => navigate("/booking")}
           className="bg-teal-600 text-white px-8 py-3 sm:px-10 sm:py-4 rounded-full font-bold hover:bg-teal-500 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInUp delay-200"
         >
-           Book your test today <FaArrowRight className="inline ml-2" />
+          Book your test today <FaArrowRight className="inline ml-2" />
         </button>
       </div>
 

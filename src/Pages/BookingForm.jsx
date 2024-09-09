@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import {
   FaUser,
@@ -7,22 +7,24 @@ import {
   FaCalendarAlt,
   FaClock,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const BookingForm = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    setValue,
-    getValues,
   } = useForm();
   const formRef = useRef(null);
+  const [isSubmitting, setIsSubmitting] = useState(false); // New state for button disabling
+  const navigate = useNavigate();
 
   // Get today's date in yyyy-mm-dd format
   const today = new Date().toISOString().split("T")[0];
 
   const onSubmit = async (data, e) => {
     e.preventDefault();
+    setIsSubmitting(true); // Disable the button
 
     try {
       const response = await fetch(
@@ -38,11 +40,11 @@ const BookingForm = () => {
       }
 
       const result = await response.json();
-      console.log(result);
-      alert(result.msg);
+
+      navigate("/success");
     } catch (err) {
-      console.error("There was a problem with the fetch operation:", err);
       alert("Submission failed. Please try again.");
+      setIsSubmitting(false); // Re-enable the button if submission fails
     }
   };
 
@@ -193,7 +195,6 @@ const BookingForm = () => {
               </div>
 
               {/* Preferred Time Input */}
-              {/* Preferred Time Input */}
               <div className="flex items-center mb-4">
                 <FaClock className="text-2xl text-teal-600 mr-3" />
                 <div className="flex-1">
@@ -204,7 +205,7 @@ const BookingForm = () => {
                     type="text"
                     {...register("time", {
                       required: true,
-                      validate: validateTime,
+                      // validate: validateTime,
                     })}
                     placeholder="10:00 AM"
                     className={`w-full px-4 py-2 border ${
@@ -232,13 +233,20 @@ const BookingForm = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="w-full bg-teal-600 text-white font-semibold py-3 rounded-lg hover:bg-teal-700 transition duration-300"
+                disabled={isSubmitting}
+                className={`w-full font-semibold py-3 rounded-lg transition duration-300 ${
+                  isSubmitting
+                    ? "bg-gray-400 text-white cursor-not-allowed"
+                    : "bg-teal-600 text-white hover:bg-teal-700"
+                }`}
               >
-                Schedule Test
+                {isSubmitting ? "Submitting..." : "Schedule Test"}
               </button>
             </div>
           </form>
         </div>
+
+        
       </div>
     </div>
   );

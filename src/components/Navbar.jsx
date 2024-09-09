@@ -22,7 +22,7 @@ const Navbar = () => {
           className="text-2xl font-bold text-teal-600"
           style={{ fontFamily: "Playfair Display, serif" }}
         >
-          <NavLink to="/">Brand</NavLink>
+          <NavLink to="/">Logo</NavLink>
         </h1>
 
         {/* Desktop Menu */}
