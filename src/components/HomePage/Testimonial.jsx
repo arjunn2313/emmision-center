@@ -45,7 +45,7 @@ const WhyTestingEssential = () => {
               className="bg-white p-8 rounded-lg border border-teal-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105"
             >
               <div className="text-4xl mb-6">{card.icon}</div>
-              <h3 className="text-xl sm:text-3xl font-semibold mb-4 text-gray-900">
+              <h3 className="text-xl sm:text-3xl font-semibold mb-4 text-teal-700">
                 {card.title}
               </h3>
               <p className="text-md sm:text-lg text-gray-600 leading-relaxed">

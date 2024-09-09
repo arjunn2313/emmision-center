@@ -169,8 +169,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent text-dark-gray p-4 shadow-md   border-light-gray font-poppins">
-      <div className="container mx-auto flex sm:px-20 justify-between items-center">
-        <h1 className="text-2xl font-bold text-teal-600">
+      <div className="container mx-auto flex sm:px-20 justify-between items-center " >
+        <h1 className="text-2xl font-bold text-teal-600"  style={{ fontFamily: 'Playfair Display, serif' }}>
           <Link to="/">Brand</Link>
         </h1>
 

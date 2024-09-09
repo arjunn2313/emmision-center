@@ -10,11 +10,15 @@ const Banner = () => {
     <div className="h-screen bg-teal-50 py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
       {/* Text Content */}
       <div className="text-center md:text-left md:w-1/2 space-y-6 sm:space-y-10">
-        <h1 className="text-4xl     md:text-7xl font-bold text-charcoal-gray mb-4 animate-fadeInUp">
-          Welcome to <span className="text-teal-500">Brand Name</span>
+        <h1 className="text-2xl     md:text-5xl font-bold text-charcoal-gray mb-4 animate-fadeInUp">
+          Welcome to
         </h1>
-        <p className="text-lg md:text-xl font-serif leading-relaxed  text-teal-600 mb-6 animate-fadeInUp delay-100">
-          Providing accurate and reliable emission tests for all types of vehicles.
+        <h1 className="text-teal-800 text-4xl  t   md:text-7xl font-bold text-charcoal-gray mb-4 animate-fadeInUp">
+          Brand Name
+        </h1>
+        <p className="text-lg md:text-xl font-serif leading-relaxed text-gray-700 mb-6 animate-fadeInUp delay-100">
+          Providing accurate and reliable emission tests for all types of
+          vehicles.
         </p>
 
         <button
@@ -38,4 +42,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
