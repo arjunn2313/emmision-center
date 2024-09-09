@@ -25,7 +25,7 @@ const Introduction = () => {
             Who We Are
           </h2>
           {/* Description with Animation */}
-          <p className="text-lg md:text-xl text-gray-700 leading-relaxed transition-transform transform duration-700 ease-in-out translate-y-4 animate-fade-in-up">
+          <p className="  text-sm md:text-xl text-gray-500 leading-relaxed transition-transform transform duration-700 ease-in-out translate-y-4 animate-fade-in-up">
             Our Emission Test Center is dedicated to ensuring the safety and
             environmental health of our community. With advanced testing
             equipment and certified professionals, we provide comprehensive

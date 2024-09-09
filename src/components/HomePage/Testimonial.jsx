@@ -8,7 +8,7 @@ const WhyTestingEssential = () => {
         <h2 className="text-2xl sm:text-5xl font-extrabold mb-12 text-gray-900 transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
           Why Emission <span className="text-teal-500">Testing is Essential</span>
         </h2>
-        <p className="text-xl text-gray-700 mb-16 transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
+        <p className="text-sm md:text-xl text-gray-500 mb-16 transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
           Emission testing is crucial for maintaining air quality, reducing
           pollution, and ensuring that vehicles meet environmental standards.
           Regular testing helps:
