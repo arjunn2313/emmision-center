@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCar, FaCheckCircle, FaClock, FaHandsHelping, FaShieldAlt, FaStar, FaTools } from "react-icons/fa";
+import about from "../assets/about.avif"
 
 const AboutUs = () => {
   return (
@@ -24,7 +25,7 @@ const AboutUs = () => {
         <div className="rounded-xl sm:p-6">
           <img
             // src="https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU="
-            src="https://img.freepik.com/premium-photo/thick-smoke-exhaust-gases-emitted-from-car-exhaust-pipes-problem-air-pollution-impact-cars-climate-change-environment_427877-2189.jpg"
+            src={about}
             alt="Our History & Mission"
             className="rounded-xl"
           />
