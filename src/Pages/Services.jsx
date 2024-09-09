@@ -34,7 +34,7 @@ const Services = () => {
 
       {/* Section 2: Testing Procedure */}
       <section>
-        <h2 className="text-4xl font-bold text-gray-900 mb-6">Testing Procedure</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold text-teal-900 mb-6">Testing Procedure</h2>
         
         <div className="bg-teal-100 rounded-xl p-6 mb-8 border border-gray-200 hover:border-teal-500 transition-all duration-300">
           <div className="flex items-center mb-4">
