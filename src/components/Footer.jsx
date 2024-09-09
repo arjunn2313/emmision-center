@@ -5,11 +5,11 @@ const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           {/* Logo and Description */}
-          <div className="text-center md:text-left mb-6 md:mb-0">
-            <h1 className="text-2xl font-bold mb-2">
-              <Link to="/">Emission Test Center</Link>
+          <div className="text-center md:text-left mb-8 md:mb-0">
+            <h1 className="text-2xl font-bold mb-4">
+              <Link to="/" className="hover:text-teal-400 transition-colors duration-300">Emission Test Center</Link>
             </h1>
             <p className="text-gray-400">
               Committed to ensuring the safety and environmental health of our community through advanced emission testing.
@@ -17,9 +17,9 @@ const Footer = () => {
           </div>
 
           {/* Links */}
-          <div className="flex flex-col md:flex-row gap-8 mb-6 md:mb-0">
-            <div>
-              <h4 className="text-lg font-semibold mb-2">Quick Links</h4>
+          <div className="flex flex-col md:flex-row gap-12 mb-8 md:mb-0">
+            <div className="flex flex-col mb-6 md:mb-0">
+              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 <li><Link to="/" className="hover:text-teal-400 transition-colors duration-300">Home</Link></li>
                 <li><Link to="/about" className="hover:text-teal-400 transition-colors duration-300">About Us</Link></li>
@@ -28,8 +28,8 @@ const Footer = () => {
                 <li><Link to="/contact" className="hover:text-teal-400 transition-colors duration-300">Contact</Link></li>
               </ul>
             </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-2">Contact Us</h4>
+            <div className="flex flex-col">
+              <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
               <ul className="space-y-2">
                 <li>1234 Elm Street</li>
                 <li>City, State, 12345</li>
