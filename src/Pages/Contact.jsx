@@ -23,7 +23,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-start md:gap-12 p-8 md:p-16 w-full md:w-4/5 lg:w-9/10 mx-auto">
+    <div className="flex flex-col md:flex-row items-start md:gap-12 p-4 sm:p-8 md:p-16 w-full md:w-4/5 lg:w-9/10 mx-auto">
       {/* Contact Information Section */}
       <div className="md:w-1/3 mb-8 md:mb-0">
         <h2 className="text-3xl font-semibold mb-6 text-gray-900">
@@ -77,7 +77,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Form Section */}
-      <div className="bg-white p-8 rounded-lg shadow-md w-full md:w-2/3">
+      <div className="bg-white p-6 sm:p-8 rounded-lg shadow-md w-full md:w-2/3">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="mb-4">
             <label

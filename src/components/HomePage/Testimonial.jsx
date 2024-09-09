@@ -6,7 +6,7 @@ const WhyTestingEssential = () => {
     <section className="py-24 px-8 bg-gray-50">
       <div className="container mx-auto text-center">
         <h2 className="text-2xl sm:text-5xl font-extrabold mb-12 text-gray-900 transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
-          Why Emission Testing is Essential
+          Why Emission <span className="text-teal-500">Testing is Essential</span>
         </h2>
         <p className="text-xl text-gray-700 mb-16 transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
           Emission testing is crucial for maintaining air quality, reducing

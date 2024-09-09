@@ -3,6 +3,7 @@ import React from 'react';
 import Banner from '../components/HomePage/Banner';
 import Introduction from '../components/HomePage/Introduction';
 import WhyTestingEssential from '../components/HomePage/Testimonial';
+import Contact from './Contact';
  
 
 const Homepage = () => {
@@ -11,6 +12,7 @@ const Homepage = () => {
       <Banner />
       <Introduction />
       <WhyTestingEssential />
+      <Contact/>
     </div>
   );
 };
