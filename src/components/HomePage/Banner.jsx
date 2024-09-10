@@ -40,14 +40,14 @@ const HeroSection = () => {
                 <span className="text-gray-200">Was:</span>{" "}
                 <span className="line-through text-white ">$25.00</span>
               </span>
-              <span className="text-3xl sm:text-6xl">
+              <span className="text-4xl sm:text-6xl">
                 <span className="text-gray-200">Now:</span>{" "}
                 <span className="text-green-400 font-bold">$13.99</span>
               </span>
-              <span className="text-xl md:text-5xl mt-2 font-extrabold text-yellow-300">
+              <span className="text-md md:text-5xl mt-2 font-extrabold text-yellow-300">
                 44%
               </span>
-              <span className="text-xl md:text-4xl font-bold text-yellow-300">
+              <span className="text-md md:text-4xl font-bold text-yellow-300">
                 OFF
               </span>
              
