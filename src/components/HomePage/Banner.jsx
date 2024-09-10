@@ -5,13 +5,13 @@ import { FaPercent, FaTag } from "react-icons/fa";
 const HeroSection = () => {
   return (
     <section className="relative h-screen bg-gradient-to-r from-primary to-secondary  ">
-      <div className="container mx-auto flex flex-col lg:flex-row gap-10 justify-evenly md:justify-center lg:justify-between items-center h-full px-6 lg:px-16">
+      <div className="container mx-auto flex flex-col lg:flex-row sm:gap-10 justify-evenly md:justify-center lg:justify-between items-center h-full px-6 lg:px-16">
         {/* Left: Text */}
         <div className="text-white space-y-3 md:space-y-6 sm:mt-12 lg:mt-0 lg:w-1/2">
-          <h1 className="text-xl md:text-5xl lg:text-6xl font-extrabold">
+          <h1 className="text-2xl md:text-5xl lg:text-6xl font-extrabold">
             Ensure Clean Air with Professional Emission Testing
           </h1>
-          <p className="text-xs md:text-xl text-neutral">
+          <p className="text-sm md:text-xl text-neutral">
             Keep your vehicle compliant with emission standards. Our certified
             testing services ensure that vehicle contributes to a cleaner
             environment.
