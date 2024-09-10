@@ -66,12 +66,20 @@ const Contact = () => {
         {/* Google Map Section */}
         <div className="mt-8">
           <h4 className="font-bold text-gray-800 mb-2">Find Us on the Map</h4>
-          <iframe
+          {/* <iframe
             title="Google Map"
             className="w-full h-64 rounded-lg shadow-md"
             src="https://www.google.com/maps/place/13.99+$+Emission+Testing/@34.0866539,-83.9914414,15z/data=!4m6!3m5!1s0x88f5950079e736df:0x3e9923e8b6b69483!8m2!3d34.0866539!4d-83.9914414!16s%2Fg%2F11w2kdnw07?hl=en&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"
             allowFullScreen=""
             loading="lazy"
+          ></iframe> */}
+          <iframe
+            title="Google Map"
+            className="w-full h-64 rounded-lg shadow-md"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.331241359698!2d-83.99401632442721!3d34.08665387314405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5950079e736df%3A0x3e9923e8b6b69483!2s13.99%20%24%20Emission%20Testing!5e0!3m2!1sen!2sin!4v1725975036717!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            // referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>
