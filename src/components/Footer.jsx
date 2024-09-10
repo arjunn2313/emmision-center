@@ -14,7 +14,7 @@ const Footer = () => {
                 to="/"
                 className="hover:text-teal-400 transition-colors duration-300"
               >
-                Emission Test Center
+              Emission First LLC
               </Link>
             </h1>
             <p className="text-gray-300">
@@ -74,15 +74,15 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
               <ul className="space-y-2">
                 <li className="flex items-center">
-                  <FaMapMarkerAlt className="text-teal-400 mr-2" /> 1234 Elm
+                  <FaMapMarkerAlt className="text-primary mr-2" /> 1234 Elm
                   Street
                 </li>
                 <li className="flex items-center">
-                  <FaMapMarkerAlt className="text-teal-400 mr-2" /> City, State,
+                  <FaMapMarkerAlt className="text-primary mr-2" /> City, State,
                   12345
                 </li>
                 <li className="flex items-center">
-                  <FaEnvelope className="text-teal-400 mr-2" /> Email:{" "}
+                  <FaEnvelope className="text-primary mr-2" /> Email:{" "}
                   <a
                     href="mailto:info@example.com"
                     className="hover:text-teal-400 transition-colors duration-300"
@@ -91,7 +91,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li className="flex items-center">
-                  <FaPhoneAlt className="text-teal-400 mr-2" /> Phone:{" "}
+                  <FaPhoneAlt className="text-primary mr-2" /> Phone:{" "}
                   <a
                     href="tel:+1234567890"
                     className="hover:text-teal-400 transition-colors duration-300"

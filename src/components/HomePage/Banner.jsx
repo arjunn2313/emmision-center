@@ -1,49 +1,65 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
-import HeroImage from "../../assets/car.png";
+import { FaCar, FaCheckCircle, FaExclamationTriangle } from "react-icons/fa";
+import { FaPercent, FaTag } from "react-icons/fa";
 
-const Banner = () => {
-  const navigate = useNavigate();
-
+const HeroSection = () => {
   return (
-    <div className="h-screen bg-teal-50 py-20 px-6 md:px-16 flex flex-col md:flex-row items-center justify-between">
-      {/* Text Content */}
-      <div className="text-center md:text-left md:w-1/2 space-y-6 sm:space-y-10">
-        <h1 className="text-2xl md:text-5xl font-bold text-teal-900  mb-4 animate-fadeInUp">
-          Experience Excellence at
-        </h1>
-        <h1 className="text-teal-800 text-4xl md:text-7xl font-bold text-charcoal-gray mb-4 animate-fadeInUp"  style={{ fontFamily: "Playfair Display, serif" }}>
-          Shop Name
-        </h1>
-        <p className="text-lg md:text-xl text-gray-700 mb-6 animate-fadeInUp delay-100">
-          Your trusted partner for top-tier emission testing solutions.
-          Providing accurate and reliable emission tests for all types of
-          vehicles.
-        </p>
+    <section className="relative h-screen bg-gradient-to-r from-primary to-secondary  ">
+      <div className="container mx-auto flex flex-col lg:flex-row gap-10 justify-evenly md:justify-center lg:justify-between items-center h-full px-6 lg:px-16">
+        {/* Left: Text */}
+        <div className="text-white space-y-3 md:space-y-6 sm:mt-12 lg:mt-0 lg:w-1/2">
+          <h1 className="text-xl md:text-5xl lg:text-6xl font-extrabold">
+            Ensure Clean Air with Professional Emission Testing
+          </h1>
+          <p className="text-xs md:text-xl text-neutral">
+            Keep your vehicle compliant with emission standards. Our certified
+            testing services ensure that vehicle contributes to a cleaner
+            environment.
+          </p>
+          <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row">
+            <button className="bg-white text-primary font-bold py-2 px-6 rounded-full shadow-md hover:bg-gray-100">
+              Book a Test
+            </button>
+            <button className="border-2 border-white text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-opacity-70">
+              Learn More
+            </button>
+          </div>
+        </div>
 
-        {/* <p className="text-lg md:text-xl font-serif leading-relaxed text-gray-700 mb-6 animate-fadeInUp delay-100">
-        
-        </p> */}
+        {/* Right: Offer Badge */}
 
-        <button
-          onClick={() => navigate("/booking")}
-          className="bg-teal-600 text-white px-8 py-3 sm:px-10 sm:py-4 rounded-full font-bold hover:bg-teal-500 transition duration-300 ease-in-out transform hover:scale-105 animate-fadeInUp delay-200"
-        >
-          Book your test today <FaArrowRight className="inline ml-2" />
-        </button>
+        <div className="relative w-full lg:w-1/2 flex justify-center lg:justify-center  ">
+          <div className="border-2 border-red-400 relative w-52 h-52  md:w-96 md:h-96 bg-gradient-to-r from-purple-700   via-indigo-500   to-violet-600 shadow-lg rounded-xl p-4 flex flex-col justify-center items-center text-white text-center font-bold transform rotate-45">
+            <div className="-rotate-45 flex flex-col text-center items-center">
+              <FaCar className="text-yellow-300 sm:text-3xl mb-2 animate-bounce" />{" "}
+              <span className="text-xs md:text-xl uppercase tracking-wider text-yellow-400">
+                Emission Test
+              </span>
+              <span className="text-xl md:text-6xl mt-2 font-extrabold text-yellow-300">
+                44%
+              </span>
+              <span className="text-xl md:text-4xl font-bold text-yellow-300">
+                OFF
+              </span>
+              <FaCheckCircle className="text-green-500 text-2xl my-1" />
+              <span className="text-sm sm:text-lg mt-2">
+                <span className="text-gray-200">Was:</span>{" "}
+                <span className="line-through text-gray-300">$25.00</span>
+              </span>
+              <span className="text-sm sm:text-2xl">
+                <span className="text-gray-200">Now:</span>{" "}
+                <span className="text-green-400 font-bold">$13.99</span>
+              </span>
+              <FaExclamationTriangle className="hidden sm:flex text-red-400 sm:text-xl mt-2 animate-pulse" />
+              <span className="hidden sm:flex text-xs sm:text-lg uppercase text-red-400 tracking-wide animate-pulse font-bold">
+                Limited Offer!
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Hero Image */}
-      <div className="sm:mt-10 md:mt-0 md:w-1/2 animate-fadeInRight">
-        <img
-          src={HeroImage}
-          alt="Emission Testing"
-          className="w-full h-auto object-cover transform transition duration-500 hover:scale-105"
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 
-export default Banner;
+export default HeroSection;

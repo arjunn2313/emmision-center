@@ -26,7 +26,7 @@ const Contact = () => {
     <div className="flex flex-col md:flex-row items-start md:gap-12 p-4 sm:p-8 md:p-16 w-full md:w-4/5 lg:w-9/10 mx-auto">
       {/* Contact Information Section */}
       <div className="md:w-1/3 mb-8 md:mb-0">
-        <h2 className="text-2xl sm:text-5xl font-semibold mb-6 text-teal-900">
+        <h2 className="text-2xl sm:text-5xl font-semibold mb-6 text-primary">
           Reach Out to Us
         </h2>
         <p className="text-gray-600 mb-6">
@@ -84,7 +84,7 @@ const Contact = () => {
               className="block text-gray-700 font-bold mb-2 flex items-center"
               htmlFor="name"
             >
-              <FaUser className="text-xl text-teal-600 mr-2" />
+              <FaUser className="text-xl text-purple-600 mr-2" />
               Your Name
             </label>
             <input
@@ -105,7 +105,7 @@ const Contact = () => {
               className="block text-gray-700 font-bold mb-2 flex items-center"
               htmlFor="email"
             >
-              <FaEnvelope className="text-xl text-teal-600 mr-2" />
+              <FaEnvelope className="text-xl text-purple-600 mr-2" />
               Email Address
             </label>
             <input
@@ -132,7 +132,7 @@ const Contact = () => {
               className="block text-gray-700 font-bold mb-2 flex items-center"
               htmlFor="subject"
             >
-              <FaEdit className="text-xl text-teal-600 mr-2" />
+              <FaEdit className="text-xl text-purple-600 mr-2" />
               Subject
             </label>
             <input
@@ -148,7 +148,7 @@ const Contact = () => {
               className="block text-gray-700 font-bold mb-2 flex items-center"
               htmlFor="message"
             >
-              <FaEdit className="text-xl text-teal-600 mr-2" />
+              <FaEdit className="text-xl text-purple-600 mr-2" />
               Message
             </label>
             <textarea
@@ -166,7 +166,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-teal-600 text-white font-bold py-3 rounded-lg hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            className="w-full bg-purple-600 text-white font-bold py-3 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-teal-500"
           >
             Submit
           </button>

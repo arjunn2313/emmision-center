@@ -27,9 +27,9 @@ const cardData = [
 
 const WhyTestingEssential = () => {
   return (
-    <section className="py-24 px-8 bg-gray-50">
+    <section className="py-24 px-8 bg-neutral">
       <div className="container mx-auto text-center">
-        <h2 className="text-2xl sm:text-5xl font-extrabold mb-12 text-teal-900 transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
+        <h2 className="text-2xl sm:text-5xl font-extrabold mb-12 text-primary transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
           Why Emission Testing is Essential
         </h2>
         <p className="text-md md:text-xl text-gray-600 mb-16 transition-transform transform duration-700 ease-in-out opacity-0 translate-y-4 animate-fade-in-up">
@@ -41,13 +41,13 @@ const WhyTestingEssential = () => {
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="bg-white p-8 rounded-lg border border-teal-300 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105"
+              className="bg-white p-8 rounded-lg border border-secondary shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:scale-105"
             >
               <div className="text-4xl mb-6">{card.icon}</div>
-              <h3 className="text-xl sm:text-3xl font-semibold mb-4 text-teal-700">
+              <h3 className="text-xl sm:text-3xl font-semibold mb-4 text-purple-600">
                 {card.title}
               </h3>
-              <p className="text-md sm:text-lg text-gray-600 leading-relaxed">
+              <p className="text-md sm:text-lg text-gray-500 leading-relaxed">
                 {card.description}
               </p>
             </div>
