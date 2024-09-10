@@ -7,12 +7,12 @@ const Services = () => {
       
       {/* Section 1: Service Descriptions */}
       <section className="mb-12">
-        <h2 className="text-2xl sm:text-4xl font-bold text-teal-900 mb-6 text-center">Our Emission Testing Services</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold text-primary mb-6 text-center">Our Emission Testing Services</h2>
         
         {/* Gasoline Emission Test */}
-        <div className="bg-white shadow-lg rounded-xl p-6 mb-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+        <div className="bg-white shadow-lg rounded-xl p-6 mb-6 border border-gray-200 hover:border-purple-500 transition-all duration-300">
           <div className="flex items-center mb-4">
-            <FaCar className="text-4xl text-teal-600 mr-4" />
+            <FaCar className="text-4xl text-purple-600 mr-4" />
             <h3 className="text-2xl font-bold text-gray-900">Gasoline Emission Test</h3>
           </div>
           <p className="text-md sm:text-lg text-gray-700">
@@ -21,9 +21,9 @@ const Services = () => {
         </div>
 
         {/* Diesel Emission Test */}
-        <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+        <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 hover:border-purple-500 transition-all duration-300">
           <div className="flex items-center mb-4">
-            <FaTruck className="text-4xl text-teal-600 mr-4" />
+            <FaTruck className="text-4xl text-purple-600 mr-4" />
             <h3 className="text-2xl font-bold text-gray-900">Diesel Emission Test</h3>
           </div>
           <p className="text-md sm:text-lg text-gray-700">
@@ -34,11 +34,11 @@ const Services = () => {
 
       {/* Section 2: Testing Procedure */}
       <section>
-        <h2 className="text-2xl sm:text-4xl font-bold text-teal-900 mb-6">Testing Procedure</h2>
+        <h2 className="text-2xl sm:text-4xl font-bold text-primary mb-6">Testing Procedure</h2>
         
-        <div className="bg-teal-100 rounded-xl p-6 mb-8 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+        <div className="bg-purple-100 rounded-xl p-6 mb-8 border border-gray-200 hover:border-purple-500 transition-all duration-300">
           <div className="flex items-center mb-4">
-            <FaProcedures className="text-4xl text-teal-600 mr-4" />
+            <FaProcedures className="text-4xl text-purple-600 mr-4" />
             <h3 className="text-2xl font-bold text-gray-900">How the Testing Works</h3>
           </div>
           <p className="text-lg text-gray-700 mb-4">
@@ -52,9 +52,9 @@ const Services = () => {
           </ul>
         </div>
 
-        <div className="bg-teal-100 rounded-xl p-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
+        <div className="bg-purple-100 rounded-xl p-6 border border-gray-200 hover:border-teal-500 transition-all duration-300">
           <div className="flex items-center mb-4">
-            <FaFileAlt className="text-4xl text-teal-600 mr-4" />
+            <FaFileAlt className="text-4xl text-purple-600 mr-4" />
             <h3 className="text-2xl font-bold text-gray-900">Required Documents</h3>
           </div>
           <p className="text-lg text-gray-700">

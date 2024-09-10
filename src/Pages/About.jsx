@@ -8,7 +8,7 @@ const AboutUs = () => {
       {/* Section 1: History & Mission */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         <div>
-          <h2 className="text-2xl text-center sm:text-4xl font-bold text-teal-900 mb-4">
+          <h2 className="text-2xl text-center sm:text-4xl font-bold text-primary mb-4">
             Our History & Mission
           </h2>
           <p className="text:md sm:text-lg text-gray-600 mb-4">
@@ -34,23 +34,23 @@ const AboutUs = () => {
 
       {/* Section 2: Statistics */}
       <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <div className="bg-white shadow-lg rounded-xl border border-teal-300 p-6 transition-transform transform hover:scale-105">
-        <FaClock className="text-4xl text-teal-600 mb-4 mx-auto" />
+      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+        <FaClock className="text-4xl text-purple-600 mb-4 mx-auto" />
         <h3 className="text-2xl font-bold text-gray-900">4+</h3>
         <p className="text-sm text-gray-600">Years of Service</p>
       </div>
-      <div className="bg-white shadow-lg rounded-xl border border-teal-300 p-6 transition-transform transform hover:scale-105">
-        <FaCheckCircle className="text-4xl text-teal-600 mb-4 mx-auto" />
+      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+        <FaCheckCircle className="text-4xl text-purple-600 mb-4 mx-auto" />
         <h3 className="text-2xl font-bold text-gray-900">1,000+</h3>
         <p className="text-sm text-gray-600">Tests Completed</p>
       </div>
-      <div className="bg-white shadow-lg rounded-xl border border-teal-300 p-6 transition-transform transform hover:scale-105">
-        <FaTools className="text-4xl text-teal-600 mb-4 mx-auto" />
+      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+        <FaTools className="text-4xl text-purple-600 mb-4 mx-auto" />
         <h3 className="text-2xl font-bold text-gray-900">50+</h3>
         <p className="text-sm text-gray-600">Certified Technicians</p>
       </div>
-      <div className="bg-white shadow-lg rounded-xl border border-teal-300 p-6 transition-transform transform hover:scale-105">
-        <FaStar className="text-4xl text-teal-600 mb-4 mx-auto" />
+      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+        <FaStar className="text-4xl text-purple-600 mb-4 mx-auto" />
         <h3 className="text-2xl font-bold text-gray-900">100%</h3>
         <p className="text-sm text-gray-600">Customer Satisfaction</p>
       </div>
@@ -64,17 +64,17 @@ const AboutUs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Example of a team member */}
           <div className="bg-white shadow-lg rounded-xl p-6 text-center">
-            <FaCar className="text-4xl text-teal-600 mx-auto mb-4" />
+            <FaCar className="text-4xl text-purple-600 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-900">John Doe</h3>
             <p className="text-sm text-gray-600">Lead Technician</p>
           </div>
           <div className="bg-white shadow-lg rounded-xl p-6 text-center">
-            <FaHandsHelping className="text-4xl text-teal-600 mx-auto mb-4" />
+            <FaHandsHelping className="text-4xl text-purple-600 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-900">Jane Smith</h3>
             <p className="text-sm text-gray-600">Customer Service Manager</p>
           </div>
           <div className="bg-white shadow-lg rounded-xl p-6 text-center">
-            <FaShieldAlt className="text-4xl text-teal-600 mx-auto mb-4" />
+            <FaShieldAlt className="text-4xl text-purple-600 mx-auto mb-4" />
             <h3 className="text-xl font-bold text-gray-900">Robert Brown</h3>
             <p className="text-sm text-gray-600">Compliance Officer</p>
           </div>

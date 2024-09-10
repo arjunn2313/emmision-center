@@ -69,7 +69,7 @@ const Contact = () => {
           <iframe
             title="Google Map"
             className="w-full h-64 rounded-lg shadow-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.007583346!2d-74.2598736871944!3d40.69767006467269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f6b8a017622f%3A0xf048d0a8f91dd91e!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1625689031923!5m2!1sen!2sin"
+            src="https://www.google.com/maps/place/13.99+$+Emission+Testing/@34.0866539,-83.9914414,15z/data=!4m6!3m5!1s0x88f5950079e736df:0x3e9923e8b6b69483!8m2!3d34.0866539!4d-83.9914414!16s%2Fg%2F11w2kdnw07?hl=en&entry=ttu&g_ep=EgoyMDI0MDkwNC4wIKXMDSoASAFQAw%3D%3D"
             allowFullScreen=""
             loading="lazy"
           ></iframe>

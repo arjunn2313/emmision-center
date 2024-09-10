@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
@@ -14,7 +15,7 @@ const Footer = () => {
                 to="/"
                 className="hover:text-teal-400 transition-colors duration-300"
               >
-              Emission First LLC
+                Emission First LLC
               </Link>
             </h1>
             <p className="text-gray-300">
@@ -74,20 +75,20 @@ const Footer = () => {
               <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
               <ul className="space-y-2">
                 <li className="flex items-center">
-                  <FaMapMarkerAlt className="text-primary mr-2" /> 1234 Elm
-                  Street
+                  <FaMapMarkerAlt className="text-primary mr-2" /> 3833 Buford
+                  drive
                 </li>
                 <li className="flex items-center">
-                  <FaMapMarkerAlt className="text-primary mr-2" /> City, State,
-                  12345
+                  <FaMapMarkerAlt className="text-primary mr-2" /> Buford GA
+                  30519
                 </li>
                 <li className="flex items-center">
                   <FaEnvelope className="text-primary mr-2" /> Email:{" "}
                   <a
-                    href="mailto:info@example.com"
+                    href="mailto:emissionfirstllc@gmail.com"
                     className="hover:text-teal-400 transition-colors duration-300"
                   >
-                    info@example.com
+                    emissionfirstllc@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center">
@@ -104,7 +105,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-gray-300 mt-6">
-          <p>&copy; 2024 Emission Test Center. All rights reserved.</p>
+          <p>&copy; {currentYear} Emission First LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

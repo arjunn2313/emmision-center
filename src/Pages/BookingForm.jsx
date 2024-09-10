@@ -69,7 +69,7 @@ const BookingForm = () => {
       <div className="flex flex-col lg:flex-row gap-12">
         {/* Form Section */}
         <div className="flex-1">
-          <h2 className="text-2xl sm:text-4xl font-bold text-teal-900 mb-8 text-center">
+          <h2 className="text-2xl sm:text-4xl font-bold text-primary mb-8 text-center">
             Book Your Emission Test
           </h2>
 
@@ -86,7 +86,7 @@ const BookingForm = () => {
 
               {/* Name Input */}
               <div className="flex items-center mb-4">
-                <FaUser className="text-2xl text-teal-600 mr-3" />
+                <FaUser className="text-2xl text-purple-600 mr-3" />
                 <div className="flex-1">
                   <label className="block text-lg font-medium text-gray-700 mb-2">
                     Full Name
@@ -96,7 +96,7 @@ const BookingForm = () => {
                     {...register("name", { required: true })}
                     className={`w-full px-4 py-2 border ${
                       errors.name ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
+                    } rounded-lg focus:ring focus:ring-purple-300 outline-none`}
                     placeholder="John Doe"
                     name="name"
                   />
@@ -110,7 +110,7 @@ const BookingForm = () => {
 
               {/* Email Input */}
               <div className="flex items-center mb-4">
-                <FaEnvelope className="text-2xl text-teal-600 mr-3" />
+                <FaEnvelope className="text-2xl text-purple-600 mr-3" />
                 <div className="flex-1">
                   <label className="block text-lg font-medium text-gray-700 mb-2">
                     Email Address
@@ -124,7 +124,7 @@ const BookingForm = () => {
                     })}
                     className={`w-full px-4 py-2 border ${
                       errors.email ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
+                    } rounded-lg focus:ring focus:ring-purple-300 outline-none`}
                     placeholder="example@email.com"
                     name="email"
                   />
@@ -138,7 +138,7 @@ const BookingForm = () => {
 
               {/* Phone Input */}
               <div className="flex items-center mb-4">
-                <FaPhone className="text-2xl text-teal-600 mr-3" />
+                <FaPhone className="text-2xl text-purple-600 mr-3" />
                 <div className="flex-1">
                   <label className="block text-lg font-medium text-gray-700 mb-2">
                     Phone Number
@@ -151,7 +151,7 @@ const BookingForm = () => {
                     })}
                     className={`w-full px-4 py-2 border ${
                       errors.phone ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
+                    } rounded-lg focus:ring focus:ring-purple-300 outline-none`}
                     placeholder="1234567890"
                     name="phone"
                   />
@@ -172,7 +172,7 @@ const BookingForm = () => {
 
               {/* Preferred Date Input */}
               <div className="flex items-center mb-4">
-                <FaCalendarAlt className="text-2xl text-teal-600 mr-3" />
+                <FaCalendarAlt className="text-2xl text-purple-600 mr-3" />
                 <div className="flex-1">
                   <label className="block text-lg font-medium text-gray-700 mb-2">
                     Preferred Test Date
@@ -183,7 +183,7 @@ const BookingForm = () => {
                     min={today} // Set minimum date to today
                     className={`w-full px-4 py-2 border ${
                       errors.date ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
+                    } rounded-lg focus:ring focus:ring-purple-300 outline-none`}
                     name="date"
                   />
                   {errors.date && (
@@ -196,7 +196,7 @@ const BookingForm = () => {
 
               {/* Preferred Time Input */}
               <div className="flex items-center mb-4">
-                <FaClock className="text-2xl text-teal-600 mr-3" />
+                <FaClock className="text-2xl text-purple-600 mr-3" />
                 <div className="flex-1">
                   <label className="block text-lg font-medium text-gray-700 mb-2">
                     Preferred Test Time
@@ -210,7 +210,7 @@ const BookingForm = () => {
                     placeholder="10:00 AM"
                     className={`w-full px-4 py-2 border ${
                       errors.time ? "border-red-500" : "border-gray-300"
-                    } rounded-lg focus:ring focus:ring-teal-300 outline-none`}
+                    } rounded-lg focus:ring focus:ring-purple-300 outline-none`}
                     name="time"
                   />
                   {errors.time && (
@@ -237,7 +237,7 @@ const BookingForm = () => {
                 className={`w-full font-semibold py-3 rounded-lg transition duration-300 ${
                   isSubmitting
                     ? "bg-gray-400 text-white cursor-not-allowed"
-                    : "bg-teal-600 text-white hover:bg-teal-700"
+                    : "bg-purple-600 text-white hover:bg-purple-700"
                 }`}
               >
                 {isSubmitting ? "Submitting..." : "Schedule Test"}
