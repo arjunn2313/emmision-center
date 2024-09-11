@@ -43,7 +43,7 @@ const App = () => {
       <Footer />
       {/* Fixed WhatsApp Icon */}
       <a
-        href="https://wa.me/7994202313?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+        href="https://wa.me/14706690240?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20services."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition duration-300 animate-bounce"

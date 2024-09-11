@@ -4,7 +4,7 @@ import introductionImage from "../../assets/vintage.png";
 
 const Introduction = () => {
   return (
-    <section className="sm:py-32 px-8 bg-neutral">
+    <section className="sm:py-32 px-8 bg-neutral   ">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between sm:gap-12">
         {/* Image Section */}
         <div className="w-full md:w-1/2">

@@ -1,10 +1,11 @@
 import React from "react";
 import { FaCar, FaCheckCircle, FaExclamationTriangle } from "react-icons/fa";
 import { FaPercent, FaTag } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen bg-gradient-to-r from-primary to-secondary  ">
+    <section className="relative h-screen bg-gradient-to-r from-primary to-secondary w-full overflow-hidden">
       <div className="container mx-auto flex flex-col lg:flex-row sm:gap-10 justify-evenly md:justify-center lg:justify-between items-center h-full px-6 lg:px-16">
         {/* Left: Text */}
         <div className="text-white space-y-3 md:space-y-6 sm:mt-12 lg:mt-0 lg:w-1/2">
@@ -17,12 +18,16 @@ const HeroSection = () => {
             environment.
           </p>
           <div className="space-y-4 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row">
-            <button className="bg-white text-primary font-bold py-2 px-6 rounded-full shadow-md hover:bg-gray-100">
-              Book a Test
-            </button>
-            <button className="border-2 border-white text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-opacity-70">
-              Learn More
-            </button>
+            <Link to="/booking">
+              <button className="bg-white text-primary font-bold py-2 px-6 rounded-full shadow-md hover:bg-gray-100">
+                Book a Test
+              </button>
+            </Link>
+            <Link to="/services">
+              <button className="border-2 border-white text-white font-bold py-2 px-6 rounded-full shadow-md hover:bg-opacity-70">
+                Learn More
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -35,8 +40,8 @@ const HeroSection = () => {
               <span className="text-md md:text-xl uppercase tracking-wider text-yellow-400">
                 Emission Test
               </span>
-               {/* <FaCheckCircle className="text-green-500 text-2xl my-1" /> */}
-               <span className="text-sm sm:text-lg mt-2">
+              {/* <FaCheckCircle className="text-green-500 text-2xl my-1" /> */}
+              <span className="text-sm sm:text-lg mt-2">
                 <span className="text-gray-200">Was:</span>{" "}
                 <span className="line-through text-white ">$25.00</span>
               </span>
@@ -50,7 +55,6 @@ const HeroSection = () => {
               <span className="text-md md:text-4xl font-bold text-yellow-300">
                 OFF
               </span>
-             
               <FaExclamationTriangle className="hidden sm:flex text-red-400 sm:text-xl mt-2 animate-pulse" />
               <span className="hidden sm:flex text-xs sm:text-lg uppercase text-red-400 tracking-wide animate-pulse font-bold">
                 Limited Offer!

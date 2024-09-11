@@ -47,17 +47,17 @@ const Contact = () => {
             <FaPhoneAlt className="text-3xl text-pink-500" />
             <div>
               <h4 className="font-bold text-gray-800">Phone</h4>
-              <p className="text-gray-600">Mobile: (+84) 546-6789</p>
-              <p className="text-gray-600">Hotline: (+84) 456-6789</p>
+              <p className="text-gray-600">Mobile: +1 (470) 669-0240</p>
+              {/* <p className="text-gray-600">Hotline: (+84) 456-6789</p> */}
             </div>
           </div>
           <div className="flex items-start space-x-4">
             <FaClock className="text-3xl text-orange-500" />
             <div>
               <h4 className="font-bold text-gray-800">Working Hours</h4>
-              <p className="text-gray-600">Monday-Friday: 9:00 AM - 10:00 PM</p>
+              <p className="text-gray-600">Monday-Friday: 8:00 AM - 6:00 PM</p>
               <p className="text-gray-600">
-                Saturday-Sunday: 9:00 AM - 10:00 PM
+                Saturday-Sunday: 8:00 AM - 2:00 PM
               </p>
             </div>
           </div>

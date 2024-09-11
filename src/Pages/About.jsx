@@ -1,6 +1,14 @@
 import React from "react";
-import { FaCar, FaCheckCircle, FaClock, FaHandsHelping, FaShieldAlt, FaStar, FaTools } from "react-icons/fa";
-import about from "../assets/about.avif"
+import {
+  FaCar,
+  FaCheckCircle,
+  FaClock,
+  FaHandsHelping,
+  FaShieldAlt,
+  FaStar,
+  FaTools,
+} from "react-icons/fa";
+import about from "../assets/about.avif";
 
 const AboutUs = () => {
   return (
@@ -12,7 +20,7 @@ const AboutUs = () => {
             Our History & Mission
           </h2>
           <p className="text:md sm:text-lg text-gray-600 mb-4">
-            Established in 2020, our Emission Test Center was founded with a
+            Established in 2024, our Emission First LLC was founded with a
             mission to ensure a cleaner and healthier environment. Our team of
             experts is dedicated to providing accurate and reliable emission
             testing services to meet the highest environmental standards.
@@ -34,27 +42,27 @@ const AboutUs = () => {
 
       {/* Section 2: Statistics */}
       <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
-        <FaClock className="text-4xl text-purple-600 mb-4 mx-auto" />
-        <h3 className="text-2xl font-bold text-gray-900">4+</h3>
-        <p className="text-sm text-gray-600">Years of Service</p>
-      </div>
-      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
-        <FaCheckCircle className="text-4xl text-purple-600 mb-4 mx-auto" />
-        <h3 className="text-2xl font-bold text-gray-900">1,000+</h3>
-        <p className="text-sm text-gray-600">Tests Completed</p>
-      </div>
-      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
-        <FaTools className="text-4xl text-purple-600 mb-4 mx-auto" />
-        <h3 className="text-2xl font-bold text-gray-900">50+</h3>
-        <p className="text-sm text-gray-600">Certified Technicians</p>
-      </div>
-      <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
-        <FaStar className="text-4xl text-purple-600 mb-4 mx-auto" />
-        <h3 className="text-2xl font-bold text-gray-900">100%</h3>
-        <p className="text-sm text-gray-600">Customer Satisfaction</p>
-      </div>
-    </section>
+        <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+          <FaClock className="text-4xl text-purple-600 mb-4 mx-auto" />
+          <h3 className="text-2xl font-bold text-gray-900">4+</h3>
+          <p className="text-sm text-gray-600">Years of Service</p>
+        </div>
+        <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+          <FaCheckCircle className="text-4xl text-purple-600 mb-4 mx-auto" />
+          <h3 className="text-2xl font-bold text-gray-900">1,000+</h3>
+          <p className="text-sm text-gray-600">Tests Completed</p>
+        </div>
+        <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+          <FaTools className="text-4xl text-purple-600 mb-4 mx-auto" />
+          <h3 className="text-2xl font-bold text-gray-900">50+</h3>
+          <p className="text-sm text-gray-600">Certified Technicians</p>
+        </div>
+        <div className="bg-white shadow-lg rounded-xl border border-purple-300 p-6 transition-transform transform hover:scale-105">
+          <FaStar className="text-4xl text-purple-600 mb-4 mx-auto" />
+          <h3 className="text-2xl font-bold text-gray-900">100%</h3>
+          <p className="text-sm text-gray-600">Customer Satisfaction</p>
+        </div>
+      </section>
 
       {/* Section 3: Meet the Team */}
       <section className="mt-12">
